@@ -1,0 +1,19 @@
+<h2>Login</h2>
+<div *ngIf="message" class="alert alert-dismissible alert-danger">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    <strong>{{message}}</strong>
+</div>
+<div class="form-group">
+    <div class="form-group">
+        <label class="form-label mt-4" for="inputValid">Correo:</label>
+            <input [(ngModel)]="empleado.email" type="text" id="nombre" class="form-control" placeholder="Ingresa tu correo" required>
+    </div>
+    <div class="form-group">
+        <label class="form-label mt-4" for="inputValid">Nombre empleado:</label>
+            <input [(ngModel)]="empleado.password" type="text" id="nombre" class="form-control" placeholder="Ingresa tu contreaseña" required>
+    </div><br>
+    <div class="boton">
+        <button class="btn btn-success" (click)="logIn()">Ingresar</button>
+    </div>
+</div>
+
