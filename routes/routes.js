@@ -111,6 +111,8 @@ routes.post('/',(req,res)=>{
                 res.send({message:'Error al registrar empleado'});
             }else{
                 res.send({message:'Empleado agregado correctamente'});
+                let prueba = res.json(consulta);
+                console.log(prueba);
             }
         }); 
         
